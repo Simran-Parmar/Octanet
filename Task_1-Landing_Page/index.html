@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Skincare Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    #main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero {
+      width: 100%;
+      height: 100vh;
+      background: url('hero-image.jpg') no-repeat center center/cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+    .hero .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+    }
+    .hero .content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero h1 {
+      font-size: 4em;
+      margin-bottom: 0.5em;
+    }
+    .hero p {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    .hero .cta {
+      display: inline-block;
+      padding: 1em 2em;
+      background: #ff7f50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+    }
+    .products, .testimonials, .footer {
+      width: 80%;
+      max-width: 1200px;
+      margin: 2em 0;
+    }
+    .products h2, .testimonials h2, .footer h2 {
+      text-align: center;
+      margin-bottom: 1em;
+    }
+    .products .product, .testimonials .testimonial {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-bottom: 2em;
+    }
+    .products .product img, .testimonials .testimonial img {
+      width: 100%;
+      max-width: 300px; /* Set a maximum width */
+      height: auto; /* Maintain aspect ratio */
+      border-radius: 10px;
+    }
+    .products .product div, .testimonials .testimonial div {
+      flex: 1;
+      padding: 1em;
+      min-width: 300px; /* Ensure the text div has a minimum width */
+    }
+    .footer {
+      text-align: center;
+      background: #f0f0f0;
+      padding: 2em 0;
+    }
+    .footer .social-icons i {
+      font-size: 2em;
+      margin: 0 0.5em;
+      color: #ff7f50;
+    }
+    .footer p {
+      margin: 0.5em 0;
+    }
+  </style>
+</head>
+<body>
+  <div id="main">
+    <div class="hero">
+      <div class="overlay"></div>
+      <div class="content">
+        <h1>Glow with Confidence</h1>
+        <p>Discover your true beauty with our natural skincare products</p>
+        <a href="#products" class="cta">Shop Now</a>
+      </div>
+    </div>
+    <div id="products" class="products">
+      <h2>Our Products</h2>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXSTY34dvIJknSsOXiaIhXXZDkXp2WsjjnJ4WsNiafQ4ci9o3-9JfOzlvWBXU8rp7qtk&usqp=CAU" alt="Radiant Glow Serum">
+        <div>
+          <h3>Radiant Glow Serum</h3>
+          <p>Experience the ultimate in skin hydration and rejuvenation with our Radiant Glow Serum. Formulated with a blend of natural ingredients like hyaluronic acid, vitamin C, and aloe vera, this serum penetrates deep into the skin to provide long-lasting moisture, reduce the appearance of fine lines, and give your complexion a radiant, youthful glow.</p>
+          <p><strong>Price:</strong> $39.99</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXSTY34dvIJknSsOXiaIhXXZDkXp2WsjjnJ4WsNiafQ4ci9o3-9JfOzlvWBXU8rp7qtk&usqp=CAU" alt="Purifying Clay Mask">
+        <div>
+          <h3>Purifying Clay Mask</h3>
+          <p>Detoxify and cleanse your skin with our Purifying Clay Mask. Infused with kaolin and bentonite clay, this mask effectively removes impurities and excess oil from your pores, leaving your skin feeling fresh, smooth, and revitalized. Ideal for all skin types, this mask also helps to reduce redness and inflammation.</p>
+          <p><strong>Price:</strong> $24.99</p>
+        </div>
+      </div>
+      <div class="product">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTXSTY34dvIJknSsOXiaIhXXZDkXp2WsjjnJ4WsNiafQ4ci9o3-9JfOzlvWBXU8rp7qtk&usqp=CAU" alt="Daily Moisturizing Cream">
+        <div>
+          <h3>Daily Moisturizing Cream</h3>
+          <p>Keep your skin hydrated and protected throughout the day with our Daily Moisturizing Cream. This lightweight, non-greasy formula is enriched with shea butter, jojoba oil, and antioxidants to nourish and protect your skin from environmental stressors. Perfect for daily use, it leaves your skin feeling soft, supple, and healthy.</p>
+          <p><strong>Price:</strong> $29.99</p>
+        </div>
+      </div>
+    </div>
+    <div class="testimonials">
+      <h2>Testimonials</h2>
+      <div class="testimonial">
+    
+        <div>
+          <p>"I've been using the Radiant Glow Serum for just a few weeks, and I can already see a noticeable difference in my skin. It feels more hydrated and looks much brighter. I've received so many compliments on my complexion! I highly recommend this product to anyone looking to improve their skin's appearance."</p>
+          <p><strong>- Sarah L.</strong></p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <div>
+          <p>"The Purifying Clay Mask is a game-changer! My skin tends to get oily and break out easily, but since I started using this mask, my skin has cleared up significantly. It feels so refreshing, and I love the smooth, clean feeling after I use it. Definitely a must-have in my skincare routine."</p>
+          <p><strong>- Michael T.</strong></p>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>Stay Connected</h2>
+      <div class="social-icons">
+        <i class="ri-twitter-fill"></i>
+        <i class="ri-instagram-fill"></i>
+        <i class="ri-facebook-fill"></i>
+      </div>
+      <p>Privacy Policies</p>
+      <p>Terms and Conditions</p>
+      <p>Contact Us</p>
+      <p>About Us</p>
+    </div>
+  </div>
+</body>
+</html>
